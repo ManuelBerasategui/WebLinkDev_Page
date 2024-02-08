@@ -6,16 +6,20 @@
     <title>Web Link Dev</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <form action="https://formspree.io/f/xrgnewge"method="POST">
 </head>
 <body>
     <header>
         <!-- Nav bar -->
+        <div class="logo-container d-flex justify-content-center bg-primary align-center">
+          <a href="#" class="mx-auto justify-content-center align-center d-flex m-3"><img src="img/weblink_logo2.png" alt="web link logo" class="mx-auto w-50"></a>
+        </div>
         <div class="navbar navbar-expand-lg bg-primary p-3">
             <div class="container">
                 <a href="#Nosotros" class="text-center text-white text-decoration-none">Quienes somos?</a>
                 <a href="#Mision" class="text-center text-white text-decoration-none">Que hacemos?</a>
-                <a href="Vision" class="text-center text-white text-decoration-none">A qué aspiramos?</a>
-                <a href="Contacto" class="text-center text-white text-decoration-none">Contacto</a>
+                <a href="#Vision" class="text-center text-white text-decoration-none">A qué aspiramos?</a>
+                <a href="#Contacto" class="text-center text-white text-decoration-none">Contacto</a>
             </div>
         </div>
 
@@ -29,6 +33,7 @@
         </section>
     </header>
 
+    <!-- Mision -->
     <section id="Mision" class="mision p-5 bg-dark text-light text-center justify-content-center text-sm-start d-flex">
         <div class="container justify-content-center text-center">
             <h2 class="mision-title fs-1 mb-5">Que hacemos??</h2>
@@ -56,10 +61,62 @@
         </div>
     </section>
 
-    <section class="galery">
-        <div class="container justify-content-center text-center">
+    <!-- Vision -->
+
+    <section id="Vision" class="vision p-5 bg-dark text-light text-center justify-content-center">
+      <div class="container">
+        <h2 class="subtitle2">A qué <span class="text-warning">Aspiramos</span>?</h2>
+        <div class="vision-content d-flex text-end">
+          <img src="img/vision-ilustration.svg" alt="vision ilustration click" class="mt-5 w-50 vision-ilustration vision-hover">
+          <h1 class="my-auto mx-auto vision-text">Buscamos ser la Agencia de Desarrollo Web <span class="text-warning">Número #1</span> de Rosario <br><img src="img/arrow-left.svg" alt="left arrow-left click" class="left-arrow-vision"></h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="Contacto" class="contacto p-5 bg-primary text-light text-center justify-content-center">
+      <div class="container">
+        <h2 class="contact-title mb-3">Contactate con Nosotros</h2>
+        <div class="mb-3 w-50 mx-auto mt-3">
+          <label for="exampleFormControlInput1" class="form-label h4 text-light">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tuemail@ejemplo.com" name="email">
+        </div>
+        <div class="mb-3 w-100 mx-auto d-flex justify-content-center ">
+          <div class="col-6">
+            <label for="exampleFormControlTextarea1" class="form-label h4 text-light">Your Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Este es tu mensaje" name="message"></textarea>
+          </div>
             
         </div>
+        <button type="submit" class="contact-btn btn btn-dark my-auto mb-0 w-15 p-2.8 m-2">Enviar</button> 
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer bg-secondary p-5 text-light text-center justify-content-center d-flex flex-row">
+      <div class="container">
+        <div class="foonav d-flex justify-content-center flex-column">
+          <div class="row footer-row">
+            <div class="col-6 d-flex flex-column">
+              <a href="#Nosotros" class="text-center text-white text-decoration-none">Quienes somos?</a>
+              <a href="#Mision" class="text-center text-white text-decoration-none">Que hacemos?</a>
+            </div>
+            <div class="col-6 d-flex flex-column">
+              <a href="#Vision" class="text-center text-white text-decoration-none">A qué aspiramos?</a>
+                <a href="#Contacto" class="text-center text-white text-decoration-none">Contacto</a>
+            </div>
+          </div>
+
+          <div class="copyright d-flex flex-row justify-content-center">
+            <p class="h4 mt-">Todos los derechos reservados &copy;Manuel Berasategui</p>
+          </div>
+          <a href="#" class="my-auto" ><img src="img/arrow-up-circle-fill.svg" alt="scroll up circle arrow" class="scroll-up-btn"></a>
+
+        </div>
+      </div>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
